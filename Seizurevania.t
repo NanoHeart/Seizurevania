@@ -2,25 +2,25 @@ var chars : array char of boolean
 for a : 1 .. 248
     loop
 	Input.KeyDown (chars)
-	if chars (KEY_UP_ARROW) then
-	    colorback (a)
+	if chars ('w') then
+	    drawfillbox (0, 0, 680, 680, 12)
 	else
-	    colorback (white)
+	    cls
 	end if
-	if chars (KEY_RIGHT_ARROW) then
-	    colorback (a)
+	if chars ('a') then
+	    drawfillbox (0, 0, 680, 680, 9)
 	else
-	    colorback (white)
+	    cls
 	end if
-	if chars (KEY_LEFT_ARROW) then
-	    colorback (a)
+	if chars ('s') then
+	    drawfillbox (0, 0, 680, 680, 14)
 	else
-	    colorback (white)
+	   cls
 	end if
-	if chars (KEY_DOWN_ARROW) then
-	    colorback (a)
+	if chars ('d') then
+	    drawfillbox (0, 0, 680, 680, 48)
 	else
-	    colorback (white)
+	    cls
 	end if
     end loop
 end for
